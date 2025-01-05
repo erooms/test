@@ -19,7 +19,7 @@ app.use(logger);
 
 app.get("/", (req, res) => {
  // console.log(__dirname + "/public/index.html");
-  res.sendFile(__dirname + "/public/index.html");
+  res.sendFile("index.html");
 });
 
 app.use(bodyParser.urlencoded({ extended: false}));
